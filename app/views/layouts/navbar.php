@@ -16,6 +16,9 @@
             <ul class="navbar-nav ms-auto">
                 <?php if (\framework\helpers\SessionHelper::isLoggedIn()):?>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">User <?php echo $_SESSION['user_name']; ?></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="<?php echo SITE_ROOT?>/users/logout">Logout</a>
                 </li>
                 <?php else: ?>

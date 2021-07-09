@@ -123,7 +123,7 @@ class UsersController extends BaseController
             }
 
             SessionHelper::createUserSession($loggedUser);
-            UrlHelper::redirect('site/index');
+            UrlHelper::redirect('posts/index');
         } else {
             $data = [
                 'email' => '',
